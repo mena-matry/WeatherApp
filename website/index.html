@@ -1,0 +1,73 @@
+<!DOCTYPE html> 
+<html lang="en" dir="ltr"> 
+ <head> 
+    <meta charset="utf-8"> 
+    <title>WeatherApp API</title> 
+    <script type="stylecss" src="styles.css"></script>
+<style>
+#zip{
+  background-color: aquamarine;
+}
+#feelings{
+background-color:cornflowerblue;
+}
+#generate{
+background-color:brown;
+width:fit-content;
+}
+.divFlex  {
+display:flex;
+width: 50%;
+border: 1px red solid;
+margin-top: 10px;
+margin-bottom: 5px;
+margin-left: 2em;
+
+}
+#temp{
+background-color:cornflowerblue;
+}
+#date{
+background-color:cornflowerblue;
+}
+#content{
+background-color:cornflowerblue;
+}
+#myTextarea{
+background-color:cornflowerblue;
+}
+    </style>
+</head> 
+  
+<body> 
+<h1 style="color:red;">Dynamic WeatherApp.</h1> 
+
+<main>
+  <div>
+    <p>
+<div>Zip Code     :</div>
+<input type="text" id="zip"></input>
+    </p>
+</div>
+<div>
+<div>Your Feeling :</div>
+<input type="text" id="feelings"></input>
+</div>
+
+<button type="button" id="generate">Generate</button>
+
+<div style="border: solid red 1px;"><span>
+<div>Date : </div>
+<div id="date"></div>
+<div>Temperature : </div>
+<div id="temp"></div>>
+<div>your Content : </div>
+<div id="content"></div>
+</span>
+</div>
+<textarea id='myTextarea' defaultValue="Enter you favorite" placeholder="hi"></textarea>
+</main>
+
+<script  src="weather.js"></script>
+</body> 
+</html> 
